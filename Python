@@ -1,0 +1,462 @@
+on the Grand Traverse, an excuse to breathe hard up high, 
+move over stone in the sky, suffer enough to feel good later.
+
+coding step 1: write a call: print(fn(n)) # output will = x
+    step 2: define fn
+
+Data class: 
+    type() ->
+        int - int() etc.
+        float
+        str
+        list ~ array
+            range - range() -> subset of list
+        tuple ('a',) -> for a 1-tuple use comma
+        None = null/nothing/undefined/ N/A
+        bool
+            int(2.3) = 2; casts 2.3 to class int; throws away all after .
+                use round(2.3) = 2.0 to stay in float/for cleanliness
+            bool(2.3) = True -> truthy 0 == False, falsy
+                "" = false -> falsy as the length of the string = 0
+        dictionary = {}
+        set = {a,b,c}
+
+Arithmatic Operators: 
+    follow pemdas
+    * / + - = mdas
+            / 
+                -> returns float
+            * + - 
+            % = mod
+            ** = exponential
+            // = floor division (knocks off remainder)
+                -> returns float if either = float, otherwise = int
+                pmdas group '%md//' and 'as' on the same levels,
+                -> within these groups, execute in order listed
+
+    Booleans: True = 1; False = 0; and, or, not - !
+        -> use operators <, >, <>, ==, != etc. with these
+
+    Bitwise logical operators: use on integers
+        execute ~ & ^ | 
+            -> and before logical operators not, and, or
+        ~ = not -> flips whatever follows - not True = False, etc. 
+        & = and -> true if both statements = True, False otherwise
+        ^ = Exclusive OR - one must me True, one False
+        | = regular OR 
+            <, >, <>, >= -> bool
+
+Incrementation: 
+    a *= 5 -> a = a * 5
+
+Comments: 
+    # = line comment
+    3 " or ' = block comments
+
+Blocks:
+    groups of statements are put together by indenting; tab = 4 spaces. 
+    The indented statement will only run if statement above it 
+        is true/satisfied
+
+Functions: 
+    Methods are fuctions that run 'on' an object,
+            (one of the basic ideas of Object Oriented Programming)
+    Functions take a tuple object as an arguemnts
+    naming vars in argument overrides position. eg;
+        def binomial(n,p, k)
+            print(binomial(k = 15, n = 139, p = 0.02))
+        -> puts variables in correct spots, even tho order of input is off
+
+    map(fuction, iterable), eg map(int,str), applies int to every ele 
+        and saves it in an iterable object that can be acted on
+    dir(obj) - returns a list of valid attributes of an obj
+    def sample fuction(x): (functin with no paramaters = "fn():")
+        return gives output
+            if no 'return', returns "None"
+        paramater = x above - a variable only accessable within the fuction
+            argument = specific value assigned to a paramater eg. 12
+        looks for/uses local varibles before global variables
+    if there is no 'return' at the end of a fn, returns 'None' type
+        default params, eg. x=2, must go to right of those w/0 defaults
+    input(menu txt before input prompt) - takes input from user as a 'string'
+    abs(#) -> absolute value 
+    round(float) -> rounds to whole #
+    len(str) = length of string 
+    str1 + str2 == str1*2 == str1str2 -> to concatenate strings
+    print(f'this is an f-string with {variable1}')
+        f'{value:{width=spacees added}.{precision=# of #s shown}}'
+        f'{value:.{3f =3 decimal places shown}}'
+    print(r'raw string literal that passes all chars thorught without \
+        escapes: r"this \t\n" -> #this \t\n ')
+    range(start, stop, increment), 
+    range(5) -> [0,1,2,3,4]
+    range(2,5) -> [2,3,4]
+    isinstance(x, int) -> bool with whether x is an int
+        bool recognized as int tho ;)
+    sorted(list) = sorts list small to large. 
+        list must be all integers/floats or 
+        strings(sorts by alphabetical ordrer, wtih CAPS before non-caps)
+        to reverse sort -> 
+    sorted(list,reverse = True, key=len) to reverse a sorted list
+        key= applies the fn after key= to all elemens and sorts those
+        Does not change underlying object
+        To sort by 2 constraints, write your key= Fn as a tuple;
+            that automatically sorts by the first item, then the second 
+    reversed(list) - reverses order of list - but returns reverse object
+        so must make that back into a list to view -> list(reverse object)
+            Does not change underlying object
+    sum(sum of eles in list)
+    max(list); useful in list.remove(max(list)) -> for #s or strings
+    min(list)
+    any(list) - > returns True if any True(thy) value in list: like OR
+    all(list) - > returns True if all True(thy) objects in list: like AND
+        use on a list/dictionary to make sure there is data in each bucket
+    choice(lst, tuple, or str) -> returns random ele
+        -> get from random library by: 'from random import choice' above
+    *args as last paramater lets fn user pass as many nunamed arguemnts 
+        as they like
+        these args, after all necessary args in the fn, can be used with 
+        'args' inside the fn args are packed inside a tuple
+    **kwargs (key word arguments) - same as args, but is a 
+        dictionary that is passed in
+
+
+
+
+Variables: convention says use well-defined and succinct snake_case names 
+    can technically be any contiguous chars not beginning w num
+    id(x) -> Location of x
+    when x changed/updated -> new id/location because it is actually being 
+        re-assigned, NOT updated
+    id of any output - e.g. integer 4, will never change during any single 
+        instance of Python;
+        so if x = 4, y = 4, id(x) == id(y)
+    assign with =
+        x = 2    read: "x gets 2"
+        a,b = 1,2 - multiple in one line (via tuple, () implied)
+        y = (1,2,3) - unpacking # *y unpacks y as well. 
+        g,h,i = y - packing
+        j = k = l = m = n = 0 - assign multile same value
+    don't write code that relies on global variables ;)
+        An object is some memory that holds a value of a given type
+            A variable is a named object/a name pointing at an object
+Scalar Types: are IMMUTABLE in Python
+    thse are classes that are sinlge entities: int, flo, bool, str, tup None
+Collection Types: 
+    MUTABLE - i.e. contents may chage while its id() stays the same
+        list [x,7, 'fds']
+        dict = dictionary
+        set 
+    IMMUTABLE
+        tuple: a special list used in enumerate() & zip() eg(1,'a', 2.0)
+            CSVs encased in parens. size = immutable, eles mutable
+
+Indexing: 
+    "str"[1] = t -> input must be integer
+    [1,2,3,"list"][-1] = "list" -> -1 = last element
+Underflow:
+    since floats aren't stored as direct representations of their binary 
+    form like integers float will only be accurate to a certain # of 
+    decimal places, potentially causing problems
+
+Command Line Interface = CLI = the terminal
+    cd = change directory; follow by directory u want to change into
+    cd ~ to get to home directory - Users/a
+    cd / to get to root directory
+    cd .. to to up one directory
+    cd . to reference current directory
+    pwd to print working directory / file path
+    rmdir <directory> delete directory
+CMD SHIFT . to show hidden files in Finder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lists: 
+    An orered set of elements that may contain other lists as elements
+    listy = ['elephant,1,True] flexible, indexed arrays containing 
+        elements or values
+    list(produces a list)
+    [a,b,c]
+    [a] * 4 = [a,a,a,a]
+    listy.append(ele)
+    unpack lists by: 1, 2, 3, 4 = listy; 
+        1,2,3,4 are new variables
+        print(3) = True
+        print(4) = ele
+    'in' used to check whether element is in a list: 
+        'True' in listy -> Boolean (True here) 
+        'not in' possible too
+    Slice list [beg:end]- take a piece of it using it's index:
+        listy[1:] -> [1,True, ele] - takes index 1 to the end of the list
+        listy[1:3] -> [1,True] - second figure exclusive 
+        (doesn't include index 3 here)
+        slice_of_list = listy[1:] -> goes to the end
+        sliced_increments = listy[::2] - leaves every second ele
+        list[0:2] = 'z' -> replaces ['a', 'b'] with ['z'] (and shorten list)
+    If paramater of a fn is a list, since lists are MUTABLE, change paramater
+            to new list before manipulating it to avoid problems. 
+        3 equivalent ways to slice lists into a new memory location 
+            so changes don't impact original paramater:
+            lst2 = lst[:]
+            lst2 = lst.copy()
+            lst2 = list(lst)
+list methods: list; a = list.append(ele) = NO NO. appends & returns None
+        .append(single_ele) -> for adding single element
+        .extend([list]) - concatenates a list like '+'
+        .remove(ele) -> removes first instance of ele
+        .pop(idx) -> removes index # from list/ last entry if idx entry empty
+            Can set this remved value equal to a variable
+        .sort() ->sorts like fuction above rearranges in place
+        del list[1:2] -> deletes elements at index 1-2
+            also to delete a variable
+        .index(ele) -> returns index # of ele; 
+            throws value error if not present; (use 'in' to check w/o error)
+        .count(ele_to_count)
+        .insert(idx, ele), inserts ele @ idx, shifting other to the right
+        .clear() - empties list of all eles
+        may NOT do list.sort().reverse(). e.g.
+            list = [1,2,3]
+            print(list.append(4)) ## Error as append() returns None. 
+            #Correct: list.append(4)
+            print(list) ## [1,2,3,4]
+
+Comprehensions: nums = [1,8,4,2]; 
+    lis = [n**2 + 3 for n in nums] -> [4, 67, 19, 7]
+    lis = [n / 2 for n in nums if n > 2] -> [4.0, 2.0]
+
+
+
+
+
+
+
+
+
+Loops: 
+    Rule of thumb for choosing 'for loops' vs 'while loops'
+        use for loops when you know how many times you will run the loop
+        use while loops when the number of iterations needed to solve a 
+            problem is unknown
+                also for menus, sessions, and "wait states"
+                watch out for infinite loops
+    for ele in lst: 
+        print(ele)
+    for i, ele in enumerate(lst, start_idx):   (start_idx is optional)
+    There is a contraint against modifying a list while iterating over it 
+        to prevent infinite iterations
+    
+    Boolean Flags - exit loops under given condition
+        if val > 90:
+            has_value_over_90 = True
+            break -> exits innermost
+            continue -> goes direct to next iteration of the loop you're in
+            pass -> use to avoid commitiing an operation 
+                i.e. as a placeholder so file will run
+
+    Collectors => List Accumulators
+        collect numbers over an iteration loop
+    zip() -> parallel iteration:check each ele of both lists @ same time
+            for a, b in zip(lst_a, lst_b):
+                if a % 2 == 1:
+                    odds.append(a)
+                if b % 2 == 1:
+                    odds.append(b)
+        may also use if the lists are not of the same length, 
+            but iteration will cease as soon as shortest list is exhausted
+    
+    Iterate though Dictionary: 
+        for key, val in d.items()
+
+    Open-ended problem (here), is any problem where you don't know how many
+        iterations it will take to achieve a result.
+
+    Menu in Command Line
+        def menu_():
+        menu = """
+            Choose:
+                1) Schnitzel
+                2) Beef Bourguignon
+                3) Duck au Poivre
+                """
+            choice = int(input(menu))
+            menu_item = ['Schnitzel', 'Beef Bourguignon', 'Duck au Poivre']
+            return menu_item[choice - 1]
+
+        order = []
+        cont = 'y'
+        while cont == 'y':
+            order.append(menu_())
+            cont = input("anything else?")
+        print(order) -> returns lst of order items
+
+
+
+
+    Strings: are immutable, so new string is returned from these methods; str
+    .upper(), .lower -> all upper-case, lower-case
+    .strip -> remove whitespace from start & end of str
+    .isalnum() -> returns boolean if str only letters & numbers
+        .isalpha() -> str all letters
+        .isdigit() -> str integers #no '.'
+    .isspace() -> whitespace: space, newline /n, tab /t, carriage return /r
+    .capitalize() -> capitalize the first char of each word
+    .split(",") -> splits str into list of strs (on 'whitespace' as default)
+    .join() -> list = ['I', 'love', 'you'] -> print(" ".join(list))
+    for any index # n: s[:n] + s[n:] == s
+    "%d little %s" %(3, 'pigs'); %d = int, %s str, %f flt pt, g% flt
+    .replace(stra, strb) returns new str
+        with all instances of stra replaced by strb
+    .format(vars in order) # "ABC, as easy as {}-{}-{}!".format(1,2,3) 
+        {idx or var from which to take (optional)}
+
+Dictionary/Hash Table
+    keys must be immutable, items are un-ordered. 3 ways to decare:
+    1) dog = {k:v, k2:v2} -> key-value pairs
+        keys are analogous to idx in lists
+    2) dog = dict(Animal="Dog", Legs=4) - note w fn declaration, keys are var
+         names and are turned into strings through dict creation
+    3) dog = {}
+        d["x"] = "xavier" to store k/v pair in d
+            best at fast fetching of keys for a value
+            gogle is basicaly one massive hash table :)
+        d.get(key,not-found) - returns value or None if value = N/A
+        d.keys() - returns all keys of d 
+            strs and tups make best keys since they are immutable
+        d.values() - returns all values of d
+        for k in sorted(d.keys()): print("key: ", k, " -> " d[k])
+        d.items() - returns dict items data type similar to list 
+            w tuple of k/v pairs
+        .pop(key) removes key/v pair returns value removed
+        del d[some_key] - also deletes key from dict
+    Formatting:
+        hash = {}
+        hash['word'] = 'Garfield'
+        hash['count'] = 42
+        "I want %(count)d copies of %(word)s" %hash # %d for int...
+        KeyError means you're trying to access a hash  with 
+            a non-valid/extant key
+
+Python files called Python modules. Each creates its own namespace
+    imports all functions and valirables from .py python file
+    type python to bring up Python Interactive Shell 
+    1st searches built-in modules for filename, 2nd in the local directory 
+
+    'import sys' imports sys module and makes all sys fns available through
+        sys.fn(): -> is discrete from 
+        sys2.fn(): -> as each module, sys & sys2 have their own namespace
+            These are variable name to-object-bindings
+    from sys import argv, exit
+        makes argv & exit available by their short names (w/o sys in front)
+        is not convention to do so tho
+    Python Standard Library -> the many modules and packages bundled with the
+        standard python install. A Library is a group of Modules. include: 
+            sys -> access to exit, argv, stdin, stdout
+            re -> regular expressions 
+            os -> OS interface, file system
+
+Tuple:
+    Tuples are immutble. i.e. you can't modify the elements in one. i.e.
+        it has pointers to certain spaces in memory that can't be changed
+        However, if these ELEMENTS ARE mutalbe, these mutable
+        elements MAY be changed inside the tuple #([mutalbe list])
+        And any list with a mutable element will have a unique id
+            i.e. will have a different ID from a tup with same (mutalbe) eles
+          so, can have tup == tup2, with different IDs, if an ele IS mutable
+    may concatenate tuples like lists tup1 + tup2 == tup += 2,
+    may multiply tuples by scalars
+    2,3 declares a tuple
+    tuple([2,3]) declares same tuple. tuple(iterable(e.g.a list))
+    tup.index(ele) returns index # of first time ele occurs in tup
+    .count(ele) returns # of times ele occurs in tup
+    .index(ele) returns first idx where ele is
+        no need to copy as tuples are not mutable
+        -> can index and slice, and concatenate them tho... tup += ("hel",) 
+         - adds to the end. Does not add sub-tuples
+        -> re-asigns to a new tuple with the same name & different id
+
+Set: mutable collection
+    A dictionary {key:value} with no values, so set {1,2,3} with unique, 
+        un-ordered keys.
+        Can cast into list, tuple, etc.
+    .add(ele) adds ele to set
+    .remove(ele) removes ele from set
+    .pop() -> removes and returns an arbitrary set ele
+    .intersection(other set) gives intersection of two sets, sorted
+    .union(other set) gives union of two sets, sorted
+    .difference(other) = s1 - s2 removes ele in other from orig set
+    .issubset(setb) -> Boolean
+    .issuperset(setb) -> Boolean
+
+Math Module: from math import e, pi,  sqrt, factorial, pow(x,y) # x^y
+
+Random Module: from random import 
+    random() - random float between 0 and 1
+    choice(lst) - picks random ele from lst
+    randint(start, end) -  picks random int in range, incl start & end
+
+Collections Module: from collections import
+    Counter - returns dictionary of counts of occurences of all eles in 
+        some collection (letters in a str, words in a lst). e.g.
+            ch_counts = Counter(sentence)
+            word_counts = Counter(sentence.split())
+    d = defaultdict(param) - dictionary w/o KeyError
+        gives default(empty) value when no key is found. possible params:
+            int - default = 0, so easy to += 1 to count
+            list - empty list to append to 
+            set - makes an empty set to add to
+            string - '' - empty string to append to 
+
+Itertools Module: from itertools import
+    permutations(iterable,(r))	
+        r-length tuples, all possible orderings, no repeated elements
+        to find # of permutations, use len(list(result)) of above
+    combinations(iterable, r) 
+        r-length tuples, in sorted order, no repeated elements
+        to find # of combinations, use len(list(result)) of above, 
+        -. using math/FACTORIALS computationally better than itertools
+            as itertools computes each posability, not just # of posabilities
+    
+    
+Comprehension -> more restricted for loops for appending or += to new list:
+        -> forgo the accumulator and put the comprehension where you would
+        have put the accumulator fn. 
+    eg: def squares_lst(in_lst):
+            out_lst = []
+            for n in in_lst:
+                out_lst.append(n**2)
+            return out_lst
+        becomes:
+        def squares_lst(in_lst):
+            return [n**2 for n in in_lst]
+             - > replaces the append function
+    -> run faster than for loops too
+
+GIT Hub Commands: the preferred Version Control System (VCS)
+    git config --global user.name "Alistair duPont"
+    git config --global user.email alistair.dupont@gmail.com
+
+    Untracked Unstaged -> git add: Staged -> git commit: Local Repository
+    -> git push: Remote Repository

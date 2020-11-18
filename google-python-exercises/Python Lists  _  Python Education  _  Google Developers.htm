@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://developers.google.com/edu/python/lists -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+                    <meta name="google-signin-client-id" content="b&#39;721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com&#39;">
+    <meta name="google-signin-scope" content="profile email">
+    
+    
+    
+          
+    
+    
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://developers.google.com/_pwa/developers/manifest.json" crossorigin="use-credentials">
+    <link rel="preconnect" href="https://www.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="preconnect" href="https://apis.google.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="">
+          <link rel="stylesheet" href="./Python Lists  _  Python Education  _  Google Developers_files/css">
+            <link rel="stylesheet" href="./Python Lists  _  Python Education  _  Google Developers_files/app.css">
+    
+    <noscript>
+          </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/edu/python/strings"><link rel="search" type="application/opensearchdescription+xml" title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Python Lists &nbsp;|&nbsp; Python Education &nbsp;|&nbsp; Google Developers</title>
+
+
+
+
+  
+
+  
+  
+  
+  
+  
+
+
+  <script async="" src="./Python Lists  _  Python Education  _  Google Developers_files/app_loader.js"></script>
+
+
+
+  
+    
+    
+    
+  
+
+    <script src="./Python Lists  _  Python Education  _  Google Developers_files/webcomponents-lite.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_app_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_analytics_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_book_nav_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_code_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_content_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_footer_linkboxes_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_footer_promos_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_footer_utility_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_header_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_heading_link_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_language_selector_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_page_rating_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_progress_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_search_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_select_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_sitemask_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_snackbar_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_toc_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_tooltip_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_user_module.js"></script><script src="./Python Lists  _  Python Education  _  Google Developers_files/devsite_devsite_spinner_module.js"></script><style type="text/css"></style><meta property="og:title" content="Python Lists  |  Python Education  |  Google Developers"><meta property="og:url" content="https://developers.google.com/edu/python/lists"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers/images/opengraph/cyan.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Google for Education",
+      "item": "https://developers.google.com/edu"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Python",
+      "item": "https://developers.google.com/edu/python"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Python Lists",
+      "item": "https://developers.google.com/edu/python/lists"
+    }]
+  }
+  </script></head>
+  <body type="article" theme="cyan" class="" layout="docs" ready="">
+    <devsite-progress id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header no-lower-row="" top-row--height="48" bottom-row--height="0" bottom-tabs--height="0" bottom-row--hidden="" fixed="">
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+      
+  
+      <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list" role="navigation" aria-label="Product breadcrumb">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="https://developers.google.com/edu" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1">
+              <svg class="devsite-google-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"></path>
+  </svg>for Education        
+  </a>
+              </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/edu/python" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="2">
+            Python
+      
+  </a>
+        </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search enable-signin="" enable-search="" enable-suggestions="" enable-query-completion="" project-name="Python Education" tenant-name="Google Developers" project-scope="/edu/python" url-scoped="https://developers.google.com/s/results/edu/python">
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+        <input aria-label="Search box" autocomplete="off" class="devsite-search-field devsite-search-query" name="q" placeholder="Search" role="combobox" type="text" value="">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button" search-open="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search box"></button>
+    </div>
+  <div class="devsite-popout"><div class="devsite-popout-result devsite-suggest-results-container" devsite-hide="" aria-haspopup="true"></div></div></form>
+  <button type="button" search-close="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search box"></button>
+</devsite-search>
+
+        <div class="devsite-search-background" style="opacity: 1;"></div></div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+        <select aria-label="Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+              <option value="en" track-metadata-original-language="en" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector" selected="selected">
+        English
+      </option>
+          <option value="id" track-metadata-original-language="en" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="en" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="es" track-metadata-original-language="en" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="fr" track-metadata-original-language="en" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="en" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="ru" track-metadata-original-language="en" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="zh_cn" track-metadata-original-language="en" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="ja" track-metadata-original-language="en" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="en" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><label id="devsite-select-322002048592650847-label" style="display:none;" aria-label="Select your language preference.">Select an option</label><button type="button" class="devsite-select-toggle" id="devsite-select-322002048592650847-button" aria-haspopup="listbox" aria-labelledby="devsite-select-322002048592650847-label devsite-select-322002048592650847-button">English</button><ul class="devsite-select-list" tabindex="-1" role="listbox" aria-expanded="false" scrollbars="" aria-labelledby="devsite-select-322002048592650847-button"><li role="option" id="devsite-select-322002048592650847-0" class="devsite-select-item" data-index="0" data-selected="" aria-selected="true" aria-label="English, selected">English</li><li role="option" id="devsite-select-322002048592650847-1" class="devsite-select-item" data-index="1" aria-selected="false" aria-label="Bahasa Indonesia">Bahasa Indonesia</li><li role="option" id="devsite-select-322002048592650847-2" class="devsite-select-item" data-index="2" aria-selected="false" aria-label="Deutsch">Deutsch</li><li role="option" id="devsite-select-322002048592650847-3" class="devsite-select-item" data-index="3" aria-selected="false" aria-label="Español">Español</li><li role="option" id="devsite-select-322002048592650847-4" class="devsite-select-item" data-index="4" aria-selected="false" aria-label="Français">Français</li><li role="option" id="devsite-select-322002048592650847-5" class="devsite-select-item" data-index="5" aria-selected="false" aria-label="Português – Brasil">Português – Brasil</li><li role="option" id="devsite-select-322002048592650847-6" class="devsite-select-item" data-index="6" aria-selected="false" aria-label="Русский">Русский</li><li role="option" id="devsite-select-322002048592650847-7" class="devsite-select-item" data-index="7" aria-selected="false" aria-label="中文 – 简体">中文 – 简体</li><li role="option" id="devsite-select-322002048592650847-8" class="devsite-select-item" data-index="8" aria-selected="false" aria-label="日本語">日本語</li><li role="option" id="devsite-select-322002048592650847-9" class="devsite-select-item" data-index="9" aria-selected="false" aria-label="한국어">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user fp-auth="" id="devsite-user" sign-out-url="https://developers.google.com/_d/signout?continue=https%3A%2F%2Fdevelopers.google.com%2Fedu%2Fpython%2Flists" sign-in-url="https://developers.google.com/_d/signin?continue=https%3A%2F%2Fdevelopers.google.com%2Fedu%2Fpython%2Flists&amp;prompt=select_account" url="https://developers.google.com/_d/signout?continue=https%3A%2F%2Fdevelopers.google.com%2Fedu%2Fpython%2Flists"><div class="ogb-wrapper ogb-si"><a href="https://developers.google.com/_d/signin?continue=https%3A%2F%2Fdevelopers.google.com%2Fedu%2Fpython%2Flists&amp;prompt=select_account" class="devsite-user-signin button devsite-top-button" track-type="globalNav" track-name="signIn" track-metadata-eventdetail="nav" track-metadata-position="nav">
+  Sign in
+</a></div></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                              </div>  </div></div>
+
+  </devsite-header>      <div class="devsite-book-nav-bg" fixed=""></div><devsite-book-nav scrollbars="" fixed="" style="top: 48px; max-height: 803px;" animatable="">
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent" aria-label="Mobile page navigation">
+  <div class="devsite-mobile-header">
+    <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+      
+          <span class="devsite-product-name">
+                        <ul class="devsite-breadcrumb-list" role="navigation" aria-label="Upper header breadcrumb">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="https://developers.google.com/edu" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1">
+              <svg class="devsite-google-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"></path>
+  </svg>for Education        
+  </a>
+              </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/edu/python" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="2">
+            Python
+      
+  </a>
+        </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="https://developers.google.com/edu/python" class="devsite-nav-title gc-analytics-event devsite-nav-has-children" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="guides">
+      <span class="devsite-nav-text" tooltip="">
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward">
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Overview</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/set-up" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Python Set Up</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/introduction" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Python Intro</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/strings" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Strings</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists" class="devsite-nav-title devsite-nav-active"><span class="devsite-nav-text" tooltip="">Lists</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/sorting" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Sorting</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/dict-files" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Dicts and Files</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/regular-expressions" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Regular Expressions</span></a></li>
+  <li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/utilities" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Utilities</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip="">Lecture Videos</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=tKTZoB2Vjuk" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">1.1 Introduction, strings</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=EPYupizJYQI" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">1.2 Lists and sorting</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=haycL41dAhg" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">1.3 Dicts and files</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=kWyoYtvJpe4" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">2.1 Regular expr</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=uKZ8GBKmeDM" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">2.2 Utilities</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=Nn2KQmVF5Og" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">2.3 Utilities urllib</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li><li class="devsite-nav-item           devsite-nav-external"><a href="http://www.youtube.com/watch?v=IcteAbMC1Ok" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">2.4 Conclusions</span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip="">Python Exercises</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/exercises/basic" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Basic Exercises</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/exercises/baby-names" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Baby Names Exercise</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/exercises/copy-special" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Copy Special Exercise</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/exercises/log-puzzle" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Log Puzzle Exercise</span></a></li></ul></li>
+          </ul>
+                                        
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper" style="margin-top: 48px;">
+        <main role="main" class="devsite-main-content" has-book-nav="" has-toc="">
+          <devsite-toc class="devsite-nav devsite-toc" visible="" fixed="" max-height="755" offset="0"><ul class="devsite-nav-list" scrollbars="" style="max-height: 755px; transform: translate3d(0px, 0px, 0px); max-width: 164px;"><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="https://developers.google.com/edu/python/lists#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Contents</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#for-and-in" class="devsite-nav-title gc-analytics-event devsite-nav-active" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0" track-type="navigation" track-name="rightNav" track-metadata-position="0" track-metadata-link-destination="#for-and-in"><span class="devsite-nav-text" tooltip="">FOR and IN</span></a><ul class="devsite-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#range" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0.0" track-type="navigation" track-name="rightNav" track-metadata-position="0.0" track-metadata-link-destination="#range"><span class="devsite-nav-text" tooltip="">Range </span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#while-loop" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0.1" track-type="navigation" track-name="rightNav" track-metadata-position="0.1" track-metadata-link-destination="#while-loop"><span class="devsite-nav-text" tooltip="">While Loop</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#list-methods" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0.2" track-type="navigation" track-name="rightNav" track-metadata-position="0.2" track-metadata-link-destination="#list-methods"><span class="devsite-nav-text" tooltip="">List Methods</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#list-build-up" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0.3" track-type="navigation" track-name="rightNav" track-metadata-position="0.3" track-metadata-link-destination="#list-build-up"><span class="devsite-nav-text" tooltip="">List Build Up</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#list-slices" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="0.4" track-type="navigation" track-name="rightNav" track-metadata-position="0.4" track-metadata-link-destination="#list-slices"><span class="devsite-nav-text" tooltip="">List Slices</span></a></li></ul></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#exercise:-list1.py" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Right nav" data-value="1" track-type="navigation" track-name="rightNav" track-metadata-position="1" track-metadata-link-destination="#exercise:-list1.py"><span class="devsite-nav-text" tooltip="">Exercise: list1.py</span></a></li></ul></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">            
+    <div class="devsite-article-meta">
+                  <ul class="devsite-breadcrumb-list" role="navigation" aria-label="Breadcrumb">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developers.google.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1">
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/products" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2">
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/edu" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3">
+            Google for Education
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/edu/python" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="4">
+            Python
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    <div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" track-metadata-score="1" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Unusable documentation" aria-label="Unusable documentation, with a rating of 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" track-metadata-score="2" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Poor documentation" aria-label="Poor documentation, with a rating of 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" track-metadata-score="3" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="OK documentation" aria-label="OK documentation, with a rating of 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" track-metadata-score="4" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Good documentation" aria-label="Good documentation, with a rating of 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" track-metadata-score="5" track-type="feedback" track-name="rating" track-metadata-position="header" role="button" tabindex="0" data-title="Excellent documentation" aria-label="Excellent documentation, with a rating of 5 out of 5"></div></div></devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">Python Lists</h1>
+    
+    <devsite-toc class="devsite-nav devsite-toc-embedded" devsite-toc-embedded="" expandable="" visible=""><ul class="devsite-nav-list" scrollbars=""><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="https://developers.google.com/edu/python/lists#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Contents</span></a><button type="button" title="Expand/collapse contents" class="devsite-nav-show-all button-transparent material-icons"></button></li><li class="devsite-nav-item" visible=""><a href="https://developers.google.com/edu/python/lists#for-and-in" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0" track-type="navigation" track-name="embeddedNav" track-metadata-position="0" track-metadata-link-destination="#for-and-in"><span class="devsite-nav-text" tooltip="">FOR and IN</span></a><ul class="devsite-nav-list"><li class="devsite-nav-item" visible=""><a href="https://developers.google.com/edu/python/lists#range" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0.0" track-type="navigation" track-name="embeddedNav" track-metadata-position="0.0" track-metadata-link-destination="#range"><span class="devsite-nav-text" tooltip="">Range </span></a></li><li class="devsite-nav-item" visible=""><a href="https://developers.google.com/edu/python/lists#while-loop" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0.1" track-type="navigation" track-name="embeddedNav" track-metadata-position="0.1" track-metadata-link-destination="#while-loop"><span class="devsite-nav-text" tooltip="">While Loop</span></a></li><li class="devsite-nav-item" visible=""><a href="https://developers.google.com/edu/python/lists#list-methods" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0.2" track-type="navigation" track-name="embeddedNav" track-metadata-position="0.2" track-metadata-link-destination="#list-methods"><span class="devsite-nav-text" tooltip="">List Methods</span></a></li><li class="devsite-nav-item" visible=""><a href="https://developers.google.com/edu/python/lists#list-build-up" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0.3" track-type="navigation" track-name="embeddedNav" track-metadata-position="0.3" track-metadata-link-destination="#list-build-up"><span class="devsite-nav-text" tooltip="">List Build Up</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#list-slices" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="0.4" track-type="navigation" track-name="embeddedNav" track-metadata-position="0.4" track-metadata-link-destination="#list-slices"><span class="devsite-nav-text" tooltip="">List Slices</span></a></li></ul></li><li class="devsite-nav-item"><a href="https://developers.google.com/edu/python/lists#exercise:-list1.py" class="devsite-nav-title gc-analytics-event" data-category="Site-Wide Custom Events" data-action="click" data-label="Embedded nav" data-value="1" track-type="navigation" track-name="embeddedNav" track-metadata-position="1" track-metadata-link-destination="#exercise:-list1.py"><span class="devsite-nav-text" tooltip="">Exercise: list1.py</span></a></li><li class="devsite-toc-toggle"><button type="button" class="button-flat devsite-nav-more-items material-icons" track-type="navigation" track-name="embeddedNavExpand" title="Expand/collapse contents" aria-hidden="true"></button></li></ul></devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+      
+              
+
+
+
+<p>Python has a great built-in list type named "list". List literals are written within square brackets [ ]. Lists work similarly to strings -- use the len() function and square brackets [ ] to access data, with the first element at index 0.  (See the official <a href="http://docs.python.org/tut/node7.html">python.org list docs</a>.)</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; colors </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">'red'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'blue'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'green'</span><span class="pun">]</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> colors</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> &nbsp; &nbsp;</span><span class="com">## red</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> colors</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> &nbsp; &nbsp;</span><span class="com">## green</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> len</span><span class="pun">(</span><span class="pln">colors</span><span class="pun">)</span><span class="pln"> &nbsp;</span><span class="com">## 3</span><span class="pln"><br></span></pre><div class="devsite-code-buttons-container"><button type="button" class="gc-analytics-event material-icons devsite-icon-code-dark devsite-toggle-dark" data-category="Site-Wide Custom Events" data-label="Dark Code Toggle" track-type="exampleCode" track-name="darkCodeToggle" aria-label="Dark code theme" data-title="Dark code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-code-light devsite-toggle-light" data-category="Site-Wide Custom Events" data-label="Light Code Toggle" track-type="exampleCode" track-name="lightCodeToggle" aria-label="Light code theme" data-title="Light code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-copy" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy" aria-label="Copy code sample to clipboard" data-title="Copy code sample to clipboard"></button></div></devsite-code>
+
+<p>
+<img src="./Python Lists  _  Python Education  _  Google Developers_files/list1.png" style="display:block; margin:0 auto" width="500" alt="list of strings &#39;red&#39; &#39;blue &#39;green&#39;"></p>
+
+<p>Assignment with an = on lists does not make a copy. Instead, assignment makes the two variables point to the one list in memory. </p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; b </span><span class="pun">=</span><span class="pln"> colors &nbsp; </span><span class="com">## Does not copy the list</span><span class="pln"><br></span></pre><div class="devsite-code-buttons-container"><button type="button" class="gc-analytics-event material-icons devsite-icon-code-dark devsite-toggle-dark" data-category="Site-Wide Custom Events" data-label="Dark Code Toggle" track-type="exampleCode" track-name="darkCodeToggle" aria-label="Dark code theme" data-title="Dark code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-code-light devsite-toggle-light" data-category="Site-Wide Custom Events" data-label="Light Code Toggle" track-type="exampleCode" track-name="lightCodeToggle" aria-label="Light code theme" data-title="Light code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-copy" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy" aria-label="Copy code sample to clipboard" data-title="Copy code sample to clipboard"></button></div></devsite-code>
+
+<p>
+<img src="./Python Lists  _  Python Education  _  Google Developers_files/list2.png" style="display:block; margin:0 auto" width="500" alt="both colors and b point to the one list"></p>
+
+<p>The "empty list" is just an empty pair of brackets [ ]. The '+' works to append two lists, so [1, 2] + [3, 4] yields [1, 2, 3, 4] (this is just like + with strings).</p>
+
+<h2 id="for-and-in" data-text="FOR and IN" tabindex="0">FOR and IN</h2>
+
+<p>Python's *for* and *in* constructs are extremely useful, and the first use of them we'll see is with lists. The *for* construct -- <code translate="no" dir="ltr">for <strong>var</strong> in <strong>list</strong></code> -- is an easy way to look at each element in a list (or other collection). Do not add or remove from the list during iteration.</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; squares </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">16</span><span class="pun">]</span><span class="pln"><br>&nbsp; sum </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"><br>&nbsp; </span><span class="kwd">for</span><span class="pln"> num </span><span class="kwd">in</span><span class="pln"> squares</span><span class="pun">:</span><span class="pln"><br>&nbsp; &nbsp; sum </span><span class="pun">+=</span><span class="pln"> num<br>&nbsp; </span><span class="kwd">print</span><span class="pln"> sum &nbsp;</span><span class="com">## 30</span><span class="pln"><br></span></pre><div class="devsite-code-buttons-container"><button type="button" class="gc-analytics-event material-icons devsite-icon-code-dark devsite-toggle-dark" data-category="Site-Wide Custom Events" data-label="Dark Code Toggle" track-type="exampleCode" track-name="darkCodeToggle" aria-label="Dark code theme" data-title="Dark code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-code-light devsite-toggle-light" data-category="Site-Wide Custom Events" data-label="Light Code Toggle" track-type="exampleCode" track-name="lightCodeToggle" aria-label="Light code theme" data-title="Light code theme"></button><button type="button" class="gc-analytics-event material-icons devsite-icon-copy" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy" aria-label="Copy code sample to clipboard" data-title="Copy code sample to clipboard"></button></div></devsite-code>
+
+<p>If you know what sort of thing is in the list, use a variable name in the loop that captures that information such as "num", or "name", or "url". Since Python code does not have other syntax to remind you of types, your variable names are a key way for you to keep straight what is going on.</p>
+
+<p>The *in* construct on its own is an easy way to test if an element appears in a list (or other collection) -- <code translate="no" dir="ltr"><strong>value</strong> in <strong>collection</strong></code> -- tests if the value is in the collection, returning True/False.</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; list </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">'larry'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'curly'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'moe'</span><span class="pun">]</span><span class="pln"><br>&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="str">'curly'</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> list</span><span class="pun">:</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">print</span><span class="pln"> </span><span class="str">'yay'</span><span class="pln"><br></span></pre></devsite-code>
+
+<p>The for/in constructs are very commonly used in Python code and work on data types other than list, so you should just memorize their syntax. You may have habits from other languages where you start manually iterating over a collection, where in Python you should just use for/in.</p>
+
+<p>You can also use for/in to work on a string. The string acts like a list of its chars, so <code translate="no" dir="ltr">for ch in s: print ch</code> prints all the chars in a string.</p>
+
+<h3 id="range" data-text="Range " tabindex="0">Range </h3>
+
+<p>The range(n) function yields the numbers 0, 1, ... n-1, and range(a, b) returns a, a+1, ... b-1 -- up to but not including the last number. The combination of the for-loop and the range() function allow you to build a traditional numeric for loop:</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; </span><span class="com">## print the numbers from 0 through 99</span><span class="pln"><br>&nbsp; </span><span class="kwd">for</span><span class="pln"> i </span><span class="kwd">in</span><span class="pln"> range</span><span class="pun">(</span><span class="lit">100</span><span class="pun">):</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">print</span><span class="pln"> i<br></span></pre></devsite-code>
+
+<p>There is a variant xrange() which avoids the cost of building the whole list for performance sensitive cases (in Python 3000, range() will have the good performance behavior and you can forget about xrange()).</p>
+
+<h3 id="while-loop" data-text="While Loop" tabindex="0">While Loop</h3>
+
+<p>Python also has the standard while-loop, and the *break* and *continue* statements work as in C++ and Java, altering the course of the innermost loop. The above for/in loops solves the common case of iterating over every element in a list, but the while loop gives you total control over the index numbers. Here's a while loop which accesses every 3rd element in a list:</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; </span><span class="com">## Access every 3rd element in a list</span><span class="pln"><br>&nbsp; i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"><br>&nbsp; </span><span class="kwd">while</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> len</span><span class="pun">(</span><span class="pln">a</span><span class="pun">):</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">print</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"><br>&nbsp; &nbsp; i </span><span class="pun">=</span><span class="pln"> i </span><span class="pun">+</span><span class="pln"> </span><span class="lit">3</span><span class="pln"><br></span></pre></devsite-code>
+
+<h3 id="list-methods" data-text="List Methods" tabindex="0">List Methods</h3>
+
+<p>Here are some other common list methods.</p>
+
+<ul>
+   <li> list.append(elem) -- adds a single element to the end of the list. Common error: does not return the new list, just modifies the original.</li>
+
+   <li> list.insert(index, elem) -- inserts the element at the given index, shifting elements to the right.</li>
+
+   <li> list.extend(list2) adds the elements in list2 to the end of the list. Using + or += on a list is similar to using extend().</li>
+
+   <li> list.index(elem) -- searches for the given element from the start of the list and returns its index. Throws a ValueError if the element does not appear (use "in" to check without a ValueError).</li>
+
+   <li> list.remove(elem) -- searches for the first instance of the given element and removes it (throws ValueError if not present)</li>
+
+   <li> list.sort() -- sorts the list in place (does not return it). (The sorted() function shown later is preferred.)</li>
+
+   <li> list.reverse() -- reverses the list in place (does not return it)</li>
+
+   <li> list.pop(index) -- removes and returns the element at the given index. Returns the rightmost element if index is omitted (roughly the opposite of append()).</li>
+</ul>
+
+<p>Notice that these are *methods* on a list object, while len() is a function that takes the list (or string or whatever) as an argument.</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; list </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">'larry'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'curly'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'moe'</span><span class="pun">]</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">'shemp'</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">## append elem at end</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">insert</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'xxx'</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">## insert elem at index 0</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">([</span><span class="str">'yyy'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'zzz'</span><span class="pun">])</span><span class="pln"> &nbsp;</span><span class="com">## add list of elems at end</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list &nbsp;</span><span class="com">## ['xxx', 'larry', 'curly', 'moe', 'shemp', 'yyy', 'zzz']</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list</span><span class="pun">.</span><span class="pln">index</span><span class="pun">(</span><span class="str">'curly'</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp;</span><span class="com">## 2</span><span class="pln"><br><br>&nbsp; list</span><span class="pun">.</span><span class="pln">remove</span><span class="pun">(</span><span class="str">'curly'</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">## search and remove that element</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">(</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">## removes and returns 'larry'</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list &nbsp;</span><span class="com">## ['xxx', 'moe', 'shemp', 'yyy', 'zzz']</span><span class="pln"><br></span></pre></devsite-code>
+
+<p>Common error: note that the above methods do not *return* the modified list, they just modify the original list.</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; list </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">]</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> &nbsp; </span><span class="com">## NO, does not work, append() returns None</span><span class="pln"><br>&nbsp; </span><span class="com">## Correct pattern:</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="lit">4</span><span class="pun">)</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list &nbsp;</span><span class="com">## [1, 2, 3, 4]</span><span class="pln"><br></span></pre></devsite-code>
+
+<h3 id="list-build-up" data-text="List Build Up" tabindex="0">List Build Up</h3>
+
+<p>One common pattern is to start a list a the empty list [], then use append() or extend() to add elements to it:</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; list </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">## Start as the empty list</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">'a'</span><span class="pun">)</span><span class="pln"> &nbsp; </span><span class="com">## Use append() to add elements</span><span class="pln"><br>&nbsp; list</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="str">'b'</span><span class="pun">)</span><span class="pln"><br></span></pre></devsite-code>
+
+<h3 id="list-slices" data-text="List Slices" tabindex="0">List Slices</h3>
+
+<p>Slices work on lists just as with strings, and can also be used to change sub-parts of the list.</p>
+
+<devsite-code><pre class="" translate="no" dir="ltr" is-upgraded=""><span class="pln">&nbsp; list </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">'a'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'b'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'c'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'d'</span><span class="pun">]</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list</span><span class="pun">[</span><span class="lit">1</span><span class="pun">:-</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> &nbsp; </span><span class="com">## ['b', 'c']</span><span class="pln"><br>&nbsp; list</span><span class="pun">[</span><span class="lit">0</span><span class="pun">:</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'z'</span><span class="pln"> &nbsp; &nbsp;</span><span class="com">## replace ['a', 'b'] with ['z']</span><span class="pln"><br>&nbsp; </span><span class="kwd">print</span><span class="pln"> list &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">## ['z', 'c', 'd']</span><span class="pln"><br></span></pre></devsite-code>
+
+<h2 id="exercise:-list1.py" data-text="Exercise: list1.py" tabindex="0">Exercise: list1.py</h2>
+
+<p>To practice the material in this section, try the problems in <strong>list1.py</strong> that do not use sorting (in the <a href="https://developers.google.com/edu/python/exercises/basic">Basic Exercises</a>).</p>
+
+<!-- could link to related sorting material -->
+
+
+
+      
+      
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    <div><div class="devsite-rating-caption">Was this page helpful?</div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" track-metadata-score="1" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Unusable documentation" aria-label="Unusable documentation, with a rating of 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" track-metadata-score="2" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Poor documentation" aria-label="Poor documentation, with a rating of 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" track-metadata-score="3" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="OK documentation" aria-label="OK documentation, with a rating of 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" track-metadata-score="4" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Good documentation" aria-label="Good documentation, with a rating of 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" track-metadata-score="5" track-type="feedback" track-name="rating" track-metadata-position="footer" role="button" tabindex="0" data-title="Excellent documentation" aria-label="Excellent documentation, with a rating of 5 out of 5"></div></div></div></devsite-page-rating>
+  
+                         
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2019-10-14 UTC.</p></devsite-content-footer>
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://googledevelopers.blogspot.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Blog
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.facebook.com/Google-Developers-967415219957038" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Facebook
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://medium.com/google-developers" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      Medium
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://twitter.com/googledevs" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Twitter
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.youtube.com/user/GoogleDevelopers" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+                      YouTube
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Programs</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://www.womentechmakers.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Women Techmakers
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developers.google.com/community/gdg" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Google Developer Groups
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developers.google.com/community/experts" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      Google Developers Experts
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developers.google.com/community/accelerators" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Accelerators
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://developers.google.com/community/dsc" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+                      Developer Student Clubs
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Developer consoles</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://console.developers.google.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+                      Google API Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://console.cloud.google.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+                      Google Cloud Platform Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://play.google.com/apps/publish" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+                      Google Play Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://console.firebase.google.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+                      Firebase Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://console.actions.google.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+                      Actions on Google Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://cast.google.com/publish" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 6)">
+                      Cast SDK Developer Console
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="https://chrome.google.com/webstore/developer/dashboard" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 7)">
+                      Chrome Web Store Dashboard
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+      <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo" src="./Python Lists  _  Python Education  _  Google Developers_files/lockup-developers.svg" loading="lazy" alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.android.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link">
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link">
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://firebase.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link">
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://cloud.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link">
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link">
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+    <nav class="devsite-footer-utility-links" aria-label="Utility links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://developers.google.com/terms/site-terms" data-category="Site-Wide Custom Events" data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://policies.google.com/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event" href="https://services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch" data-category="Site-Wide Custom Events" data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+        <select aria-label="Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+              <option value="en" track-metadata-original-language="en" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector" selected="selected">
+        English
+      </option>
+          <option value="id" track-metadata-original-language="en" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="en" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="es" track-metadata-original-language="en" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="fr" track-metadata-original-language="en" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="en" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="ru" track-metadata-original-language="en" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="zh_cn" track-metadata-original-language="en" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="ja" track-metadata-original-language="en" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="en" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><label id="devsite-select-47904901825048785-label" style="display:none;" aria-label="Select your language preference.">Select an option</label><button type="button" class="devsite-select-toggle" id="devsite-select-47904901825048785-button" aria-haspopup="listbox" aria-labelledby="devsite-select-47904901825048785-label devsite-select-47904901825048785-button">English</button><ul class="devsite-select-list" tabindex="-1" role="listbox" aria-expanded="false" scrollbars="" aria-labelledby="devsite-select-47904901825048785-button"><li role="option" id="devsite-select-47904901825048785-0" class="devsite-select-item" data-index="0" data-selected="" aria-selected="true" aria-label="English, selected">English</li><li role="option" id="devsite-select-47904901825048785-1" class="devsite-select-item" data-index="1" aria-selected="false" aria-label="Bahasa Indonesia">Bahasa Indonesia</li><li role="option" id="devsite-select-47904901825048785-2" class="devsite-select-item" data-index="2" aria-selected="false" aria-label="Deutsch">Deutsch</li><li role="option" id="devsite-select-47904901825048785-3" class="devsite-select-item" data-index="3" aria-selected="false" aria-label="Español">Español</li><li role="option" id="devsite-select-47904901825048785-4" class="devsite-select-item" data-index="4" aria-selected="false" aria-label="Français">Français</li><li role="option" id="devsite-select-47904901825048785-5" class="devsite-select-item" data-index="5" aria-selected="false" aria-label="Português – Brasil">Português – Brasil</li><li role="option" id="devsite-select-47904901825048785-6" class="devsite-select-item" data-index="6" aria-selected="false" aria-label="Русский">Русский</li><li role="option" id="devsite-select-47904901825048785-7" class="devsite-select-item" data-index="7" aria-selected="false" aria-label="中文 – 简体">中文 – 简体</li><li role="option" id="devsite-select-47904901825048785-8" class="devsite-select-item" data-index="8" aria-selected="false" aria-label="日本語">日本語</li><li role="option" id="devsite-select-47904901825048785-9" class="devsite-select-item" data-index="9" aria-selected="false" aria-label="한국어">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>    <devsite-tooltip></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics><script type="application/json" analytics="">[{"gaid": "UA-24532603-1", "dimensions": {"dimension6": "en", "dimension5": "en", "dimension11": false, "dimension1": "Signed out", "dimension3": false, "dimension4": "Python Education", "dimension8": null}, "metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}}]</script><script type="application/json" gtm="">{"parameters": {"freeTrialEligibleUser": "False", "internalUser": "False", "language": {"machineTranslated": "False", "requested": "en", "served": "en"}, "projectName": "Python Education", "scriptsafe": null, "signedIn": "False", "tenant": "developers"}}</script></devsite-analytics>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6","https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v1241c04ebcb2127897d6c18221acbd64e7ed5c46e5217fd83dd808e592c47bf6/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  
+<div id="ambiance-notification"></div><div id="blue_light_filter" style="width: 100%; height: 100%; z-index: 2147483646; transition: -webkit-transform 10s ease-in-out 0s; position: fixed !important; left: 0px !important; bottom: 0px !important; overflow: hidden !important; pointer-events: none !important; background: rgb(214, 107, 0); opacity: 0;"></div><div id="blf_status" style="position: fixed !important; width: 105px; height: 27px;	color: white; text-shadow: 1px 2px 4px #000; font-size: 20px;	font-weight: bold; background-color: blue; z-index: 2147483647;	right: 0px; top: 0px; display:none; font-family: arial,sans-serif; text-align: center;"></div></body></html>

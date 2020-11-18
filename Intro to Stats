@@ -1,0 +1,312 @@
+Inferrentail statistics = making inferences about populations from samples
+NumPy: all #s in 'n-dim arrays' are int or floats
+Pandas: built on NumPy, can handle mixed/real world data types
+
+NumPy: 'import numpy as np'
+    np.sqrt(9) -> 3.0
+    vec = np.array([3,4,5])
+    matrix = nested list/vector = np.array([1,2,3],[4,5,6],[7,8,9])
+    mat.shape -> dim of matrix, (3,3) (rows, cols)above
+    mat[row2,col0]->accesses row 2, col 0 = 7 above, (like reading: row 1st)
+    mat[1:,1:] -> slices above into 2x2 matrix w/o top & left
+    np.arange(100) -> = python range(0..99)
+    .reshape(-1,1)/(1,-1) '-1' automates # of rows/cols respectively 
+    are mutable: mat[0,] = 10 makes first row all 10s
+    mat[mat > 3] -> filters arr eles
+    vec * 2 -> [6,8,10]; vec + 2 = [5,6,7] - all eles get operation
+    element-wise operations vec + vec1 = add all eles in same position
+    vec * vec2 -> multiply all eles in the same position
+    vec.dot(vec2) -> dot product of two vectors, 
+    mat.dot(mat2) -> inner product of two mats
+    np.random.seed() drives the numpy.random module so the same result random
+        can be arrived at by different users for testing, etc. 
+
+Mean:
+    Use for large datasets with few outliers
+    Only use arithmetic mean in stats (not harmonic or geometric)
+    mu = population mean
+    x-bar = samle mean
+    X-bar = sample mean where X is a random variable
+    import numpy as n
+        n.mean(list)
+    
+Median: 
+    Use for dataset with large outliers
+    x~ = Med(A), where A is the collection on which the median is to be taken
+    import numpy as n
+        n.median(list) 
+
+Mode:
+    Use for categorical data
+    Mo = Mode(A)
+    from scipy import stats 
+        stats.mode(list)
+        
+Five-Number-Summary: 
+    = min, Q1, median, Q3, max
+        1st = sort, 2nd find median, 3rd find median of lower & upper no's
+            from numpy import percentile
+            q1, med, q3 = percentile(lst,[25, 50, 75])
+
+
+
+
+
+
+
+
+
+
+
+Variance:
+    s**2 - generally the variance of a sample
+        sum of differences squared / (n-1)
+        np.var(lst, ddof=1)
+            ddof = delta degrees of freedom(usually 1 like above)
+    mu**2 - variance of a population
+        sum of differences squared / n
+        np.var(lst)
+
+Standard Deviation: sqrt of var
+sd = standard deviation
+    s - of sample
+        np.std(lst, ddof=1))
+    mu - of populatin
+        np. std(lst)
+        
+Data Types:
+    Nominal - names, or lables - apples, oranges
+    Ordinal - order important, but distance between points not known 1st, 2nd
+    Interval - know order and distance between values
+        but have no true zero - Temperature scales
+
+Plots:
+    Bar Chart - usually to compare values of discret categories
+        Grouped - group bars together - e.g. rev by month by region
+        Stacked - same info as grouped possible
+
+    Histogram - shows frequencies(y-axis) for intervals(buckets) of a 
+        continuous numeric value(x-axis) 
+        - an estimate of the PDF of a continuous variable
+            - by convention each bin is left-inclusive
+        right-skewed = positively skewed data, has a tail towards the right
+            - that is, ths mean is greater than the median, like income
+            # of bins to use in Histogram = sqrt(n) data points
+
+    Pie Charts - ineffective if have more than 5 or 6 parts to whole
+        can be hard to compare segments & to other pie charts 
+        - good cause familiar and easy for non-technical people 
+
+    Scatter Plots - show rel betwn 2+ variables w cartesian coordinates
+        if one varaible dependent on another, display ind var on x-axis
+        best-fit lines show trends/correlation in the data
+        use size, shape, or color to represent 3, 4, or 5 variables
+
+    Line Graph/Chart - stock charts
+        cartesian coordinates usu w time on x axis -> change over time
+
+    Box (& Whisker) Plot
+        visual representation of 5 # Summary
+    
+
+
+
+
+
+
+
+
+
+
+Set Theory:
+    Sample Space: S - every possible outcome of a random experiment
+    Certain - outcome guaranteed e.g. coin w 2 heads
+    Random Experiment - process where outome not predictable w certainty
+        S = {H, T} - flip of a coin
+    Sample Point - result of a single random experiment
+    Event - Defined collection of outcomes of a random experiment; usu A, B
+        A specific subset of S
+        Reprsents a certain subset of the sample space
+            E.G. when coin lands heads, A: S={H}, or either B: S={H,T}
+    Union -> A U B
+    Intersection - AB or A inverted U B
+    Complement(A) = all eles not in A, Ac, A0, Abar, A'
+    difference bewteen sets: A - B = ABc; eles in A but not in B
+        - or delete from A any eles in B
+    3 Fundamental Properties of Set Algebra:
+        Commutative - AB = BA; AUB = BUA
+        Associative - A(BC) = (AB)C; AU(BUC) = (AUB)UC 
+        Distributive - A U (BC) = (AUB)(AUC)
+                       A(BUC) = (AB) U (AC)
+    Idempotent Law - AUA = AA = A
+    Absorbtion Law - A U (AB) = A(AUB) = A
+    Involution - (Ac)c = A
+    DeMorgan's Laws
+        1) (AuB)c = AcBc
+        2) (AB)c = Ac u Bc
+        - i.e. 1) switch union and intersection of two events 
+               2) switch complement, c between parens & each indiv event
+        e.g. ((A∪B)c C)c = ((AcBc)C)c = (AcBc)c u Cc = A u B u Cc
+    Subset - A is a subset of B iff all elles in A are also in B
+    Superset - opposite of subset
+    Equality -> iff B is a subset of A, and A is a subset of B
+
+Linear: 
+    vector = arrow with tail at oragin
+    scalar addition, add each vector component - add across
+        v1 + v2 -> take v1 and put it at end of the v2 (or visa versa)
+    scalar multiplocation = scaling/stretching vector in same direction
+        = v1*2 = multiply each component by a scalar
+    dot product: v1 dot v2: * each component & add products down the vector
+        is the perpendicular projection of one vector onto the other
+        is just a linear projection from 2d vectors to 1d - #s
+    det = determinant: area of parallelogram formed by 2 vectors
+        factor by which a basis is changed
+        * each vector & subtract second from first
+    cross product: v x w = area beteen if same orientation 
+        as i,j (x,y) basis vectors; negative if order/oritntation reveresed
+
+
+
+
+
+
+
+
+
+
+
+
+
+Probability:
+    P(A), probability of event A = |A|/|S| = 
+        # outcomes in event A / # outcomes in sameple sapce S = 
+            Cardinality of A / Cardinality of S
+                |X| is common for magnitute, or size, like abs value
+    Dependence = P(A|B) = prob of A given B; 
+        prob of A is dependent on B/we presume that B has occurred
+    Independent Event: if the occurence of A does not affect P(B)
+            can also be called mutually exclusive in that they don't overlap
+            in the sample space
+        P(A) = P(A|B) = P(A|Bc) e.g. knowing a card is Hearts will not 
+            help you guess its numeric/royal value
+        P(AB) = P(A)*P(B) if A and B are independent 
+    Mutually Exclusive: AB = Null Space
+    Prob of Union of 2+ events A u B:
+        P(A u B) = A + B - AB
+        P(A u B u C) = A + B + C - AB - AC - BC + ABC
+        For u of any # of Events:
+            Add all intersections of odd # of events & sub-events
+            Subtract all intersections of even # of sub-events
+                Called inclusion-exclusion principle
+
+    Cartesin Product/ Cross Product 
+        = all possible combinations of two + ind sets. Cardinality:
+        |SxH|=|S|x|H| = 2x4 =8->how many combos of Shirts & Hats can be worn?
+         -> = set of all possible outcomes
+            = cardinality/size of the sample space of these sets
+         - in a combination, the order of the evens does not matter, 
+            but the events themselves may differ - order inside tuple)
+        = {(s1, h1), (s1, h2)} w {} a set, and () a tuple, an ordered set
+
+    Factorial - ! = # of ways to draw from a set without replacement
+         = # of ways eles in a set of eles can be arranged
+
+    Permutations = Combination where order of events does matter
+        nPr = n!/(n-r)! = # of permutations = 60 choose 5 lotto balls 
+    
+    Combinations = Permutation where order doesn't matter - n choose r
+        = how many different subsets of a specific size can be made
+            from the original   set?
+        nCr = n!/((n-r)! r!) = 'n choose r', (nr)
+    
+Conditional Probability: P(A|B) = P(AB)/P(B)
+    General Multiplication Rule: 
+        P(AB) = P(A)*P(B)
+    Multiplication Rule for Independent events
+        P(AB) = P(A) * P(B);
+        means not only independence, but that each draw is Identical. 
+        = iid = independently and identically distributed
+    Law of Total Probability - partitioning the sample sapce, = prob of 1
+        E == FuGuH...or P(FE) +P(GE) + ... == E for all FGH = null
+            i.e. just add mutually exclusive subsapces to fill sample sapce
+        sample sapce = set of all possible outcomes
+    Bayes Theorem - Prob of a posterior event - i.e based on previous 
+        conditions
+        P(A|B) = P(B|A) * P(A) / P(B)
+
+
+
+
+Discrete Probability Distribution / Random Vairables:
+    Discrete means finite sample space / set of possible outcomes
+    Random Variable: output number determined by chance = X or Y usually
+        Expected Value = X = E(X) = mu,
+            = long-term average
+            = population average
+            = weighted average of possible outcomes
+            = SUM x * P(X=x) = SUM(values of x * probabilities of those vals)
+            
+        Standard Deviation = sigma = sqrt Variance
+        = SQRT of SUM of (x-mu)**2 * P(X=x)  -for each x in sample sapce
+
+Probability Mass Function (PMF)
+    - shows probabilities for each ele in sample space
+        - put in buckets/add to get combined probabilities
+
+Cumulative Distribution Fuctin (CDF)
+     - can be used to discribe continuous or discrete Random Variables
+
+Bernouli Trial/Distribution - most simple discrete distribution
+    = X ~ Bernouli(p)
+    single trial w two possible outcomes
+     - Success or 
+     - Failure
+     mu = expected value = prob of success = 1 * p
+        probability of success, p, is the only paramater/input
+    to code p == 25%: from numpy import random; random.choice([0, 0, 0, 1])
+
+Binomial Distribution:
+    Used to model the number of successes in a sequence of Bernouli Trials
+        e.g. # of heads in 10 successive coin flips
+        P(X = k) = (n choose k)* p^k * (1-p)^(n-k)
+        = X binomial(n, p), where:
+            n = # of trials
+            k = # of successes we're calculating prob of
+            p = prob of success in a given trial
+        for CDF - simplty add individual probabilities up to chosen k
+    Average = Expected Value = mu x = np
+    Variance = np(1-p)
+
+Geometric Distribtuion:
+    like the Binomial Dist., Geometric models a sequence of Bernoulli trials. 
+     - however, where Binomial models k success in n trials
+        Geometric models how many trials till the first success  
+            where k = # of trials up to and including first success
+            (or k = # failrues before 1st success - uncommon interpretation)
+    Geo PMF = X ~ geometric(p), or X ~ G(p) 
+        P(X = k) = (1-p)**(k-1) * p   for 1<= k <= infinity
+            k = trial where fist success encountered
+    Expected value = mu = 1/p
+    Var(X) = (1-p) / p**2
+
+    Geo CDF = has formula not needing summation
+        P(X<=k) = 1-(1-p)**k    for 1<= k <= infinity
+            -> think of as first success is > k = prior buckets failed:
+                (1-p)**k 
+            complement of this = prob success is on or before k = 1-(1-p)**k
+
+
+
+Poisson Distribution:
+    models prob a given # of events happen in a given time period or space
+        events occur at previously measured constant rate
+        each occurence of an event is independent
+        Sample space is infinite
+        if is discrete as k is discrete 
+    X~ Poisson(lambda) or X~ Po(lambda)
+    P(X = k) = x**k * e**-x / k!
+        x = lambda = rate at which events occur
+        k = # of events occuring
+
+
