@@ -457,6 +457,8 @@ Comprehension -> more restricted for loops for appending or += to new list:
 GIT Hub Commands: the preferred Version Control System (VCS)
     git config --global user.name "Alistair duPont"
     git config --global user.email alistair.dupont@gmail.com
+    git status -> to see status of directory / to clean up
+    git log -> to see list of former commits along with messages and times
 
-    Untracked Unstaged -> git add: Staged -> git commit: Local Repository
-    -> git push: Remote Repository
+    Untracked Unstaged -> git add -A: Staged -> git commit -m "what's updated":
+        Local Repository -> git push: Remote Repository 
