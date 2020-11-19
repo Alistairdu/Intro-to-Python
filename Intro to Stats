@@ -1,3 +1,5 @@
+Shell, Exxon, Embraer
+
 Inferrentail statistics = making inferences about populations from samples
 NumPy: all #s in 'n-dim arrays' are int or floats
 Pandas: built on NumPy, can handle mixed/real world data types
@@ -214,6 +216,7 @@ Probability:
 
     Permutations = Combination where order of events does matter
         nPr = n!/(n-r)! = # of permutations = 60 choose 5 lotto balls 
+        r = # of objects selected
     
     Combinations = Permutation where order doesn't matter - n choose r
         = how many different subsets of a specific size can be made
@@ -234,7 +237,6 @@ Conditional Probability: P(A|B) = P(AB)/P(B)
     Bayes Theorem - Prob of a posterior event - i.e based on previous 
         conditions
         P(A|B) = P(B|A) * P(A) / P(B)
-
 
 
 
@@ -308,5 +310,6 @@ Poisson Distribution:
     P(X = k) = x**k * e**-x / k!
         x = lambda = rate at which events occur
         k = # of events occuring
+        expected value = Variance = lambda
 
 

@@ -457,8 +457,22 @@ Comprehension -> more restricted for loops for appending or += to new list:
 GIT Hub Commands: the preferred Version Control System (VCS)
     git config --global user.name "Alistair duPont"
     git config --global user.email alistair.dupont@gmail.com
-    git status -> to see status of directory / to clean up
-    git log -> to see list of former commits along with messages and times
 
-    Untracked Unstaged -> git add -A: Staged -> git commit -m "what's updated":
-        Local Repository -> git push: Remote Repository 
+
+    GIT Stack: 
+        Untracked Unstaged -> git add -A: 
+            git diff -> shows last diff not yet Staged
+            git status -> directory status / files not staged/committed
+        Staged -> git commit -am "what's updated": #-add, message
+        Local Repository -> git push: 
+            git log -p -> list of former commits w messages and times
+            git push 
+        Remote Repository 
+
+    Classes - class Binomial: style says 
+        python sees files as classes
+        dunder methods are used inside a class, but are never called
+        fns in a class are methods - called class.fn()
+        __init__ runs these when you initialize the class
+            these dunder methods must return None, nothing else
+        __repr__(self) enables you to return an f-string
