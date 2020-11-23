@@ -305,7 +305,7 @@ Poisson Distribution:
         events occur at previously measured constant rate
         each occurence of an event is independent
         Sample space is infinite
-        if is discrete as k is discrete 
+        fn is discrete as k is discrete 
     X~ Poisson(lambda) or X~ Po(lambda)
     P(X = k) = x**k * e**-x / k!
         x = lambda = rate at which events occur
@@ -313,3 +313,4 @@ Poisson Distribution:
         expected value = Variance = lambda
 
 
+Exponential Distribution - measures time between events

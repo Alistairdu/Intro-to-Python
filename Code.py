@@ -1,6 +1,5 @@
-from math import e, sqrt
-from random import random, choice
-
+from math import e
+from random import random
 
 def factorial(n):
     prod = 1
@@ -9,34 +8,75 @@ def factorial(n):
     return prod
 
 def permutation(n,k):
-    return int(Stats.factorial(n) / Stats.factorial(n-k))
+    return int(factorial(n) / factorial(n-k))
 
-def combination(n,k):
-    return int((Stats.permutation(n,k)/ Stats.factorial(k)))
+def choose(n,k):
+    return int(permutation(n,k) / factorial(k))
 
 def bernoulli(p):
-    if random()<p:
+    if random() < p:
         return 1
     return 0
 
 def binomial(n,k,p=0.5):
-    return Stats.combination(n,k) * p**k * (1-p)**(n-k)
+    return choose(n,k) * p**k * (1-p)**(n-k)
 
-def binomial_cdf(n,k,p):
-    return sum([Stats.binomial(n, i, p) for i in range(k+1)])
+def bin_cdf(n,k,p=0.5):
+    return sum([binomial(n,i,p) for i in range(k+1)])
 
-def binomial_mu_var(n,p):
-    return n * p, n * p * (1-p)
+def bin_mv(n,p=0.5):
+    return n * p, n * p * (n-p)
 
-def geo(n,k,p=0.5):
-    return (1-p)**(k-1) * p
+def geo(n,k,p=0.5): # first success is on kth trial
+    return (1-p)*(k-1) * p
 
-def poisson(x,k):
-    x**k * e**-x / factorial(k)
+print(geo(10,1,0.5))
+print(0.5**0)
 
-print(Stats.factorial(4))
-# print(bernoulli(.5))
-print(Stats.binomial_cdf(6,4, 0.9))
-print(Stats.geo(6,0))
+def geo_cdf(n,k,p=0.5):
+    return sum([geo(n,i,p) for i in range(1,k+1)])
 
-# cars going past intersection = x for y amt of time
+def geo_cdf1(n,k,p=0.5):
+    return 1-((1-p)**k)
+
+'''
+def geometric_cdf(p, k, inclusive=True):
+    acc = 0 
+    if inclusive: 
+        low_k = 1
+    else: 
+        low_k = 0        
+    for value in range(low_k, k+1) : 
+        acc += geometric_pmf(p, value, inclusive)
+    return acc 
+print(geometric_cdf(0.5, 7, inclusive=True)) #0.9921875
+
+Geometric Distribtuion:
+    like the Binomial Dist., Geometric models a sequence of Bernoulli trials. 
+     - however, where Binomial models k success in n trials
+        Geometric models how many trials till the first success  
+            where k = # of trials up to and including first success
+            (or k = # failrues before 1st success - uncommon interpretation)
+    Geo PMF = X ~ geometric(p), or X ~ G(p) 
+        P(X = k) = (1-p)**(k-1) * p   for 1<= k <= infinity
+            k = trial where fist success encountered
+    Expected value = mu = 1/p
+    Var(X) = (1-p) / p**2
+
+    Geo CDF = has formula not needing summation
+        P(X<=k) = 1-(1-p)**k    for 1<= k <= infinity
+            -> think of as first success is > k = prior buckets failed:
+                (1-p)**k 
+            complement of this = prob success is on or before k = 1-(1-p)**k
+'''
+
+
+# print(factorial(5))
+# print(choose(5,2))
+# print(bernoulli(0.7))
+# print(binomial(10,10,0.9))
+# print(bin_cdf(10,9,0.9))
+# print(bin_mv(10,0.9))
+# print(geo_cdf(10,2,0.9))
+# print(geo_cdf1(10,2,0.9))
+# print(geo_mv(10,2,0.9))
