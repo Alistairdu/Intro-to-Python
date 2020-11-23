@@ -294,11 +294,10 @@ Geometric Distribtuion:
 
     Geo CDF = has formula not needing summation
         P(X<=k) = 1-(1-p)**k    for 1<= k <= infinity
-            -> think of as first success is > k = prior buckets failed:
+            -> think: for first success to be > k = prior buckets failed:
                 (1-p)**k 
-            complement of this = prob success is on or before k = 1-(1-p)**k
-
-
+            since we want prob from k == 1 = complement of this,
+                prob success is on or before k = 1-(1-p)**k
 
 Poisson Distribution:
     models prob a given # of events happen in a given time period or space
