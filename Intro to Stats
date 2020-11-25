@@ -311,5 +311,63 @@ Poisson Distribution:
         k = # of events occuring
         expected value = Variance = lambda
 
+    Discrete RV - is Countable: 
+    Countable sets can be put in 1-1 relationship with pos integers - N
+        - includes list of all integers - Z: 
+        and tuples, threeples of Z, and 
+        rationsal #s (ratio/fractions - pf: use table like a tuples) 
+            -said to be counably infinite
+
+    Continuous RV - is Uncountable:
+         - R - & any subset of the Real # line is not countable
+             - thus, computing mu, var of Continuous RVs requires Calc
+    
+    Probability Mass Functions: PMFs, discribe discrete RVs
+    Probability Distribution Fuctnions: PDFs, describe continuous RVs
+
+    Probability Distributions are descriptions of Random Variables
+        - Representing outcomes of a Random Experiment. Used:
+        -- 1) to define a sample space
+        -- 2) to compute and interpret Random Experiment probs
+        -- 3) as basis for statistical inference
+        --- Expected Value, mu, E(X) = integral of x * f(x) dx over PDF range
+        --- Variance = E(X**2) - (E(X))**2
+         - notation PDF: fx(x);  CDF = Fx(x)
+         - probabilities under curve = integral of fn dx
+        to find the CDF of a continuous function,   
+            take integral of PDF at that point
+            to calc probablity of CDF - 
+                 plug in value given and subtract value @ zero
+
+    The Normal/Gaussian Distribtuion: X ~ N(mu, sigma)
+        so common b/c of the Central Limit Theorem
+            - mu of samples from a (non-normal) distributsion will be Gaussian
+                if sample is greater than 30
+        PDF = 1/sqrt(2*sigma**2 * pi) * e** -(x-mu)**2/2*sigma**2)
+        CDF - above cannot be integrated by hand, so use tables
+
+        The Standard Normal Distribtuion:
+            has: mu = 0, sigma = 1
+        Z-Score = how many sigma above or below the mean a given value lies 
+            Z = (X-mu)/sigma for normally dist RV X 
+
+        from scipy.stats import norm
+        print(norm.cdf(1.5, loc=1.25, scale=.46)) 
+            = (val, loc=mu=0, scale=sigma=1) # do not use mu & sigma in call
+        print(norm.ppf(0.90, loc=1.25, scale=.46)) #90th percentile
+            = (percentile of RV, loc=mu=0, scale=sigma=1) 
+        
+        
+        
+
+
+
+
+
+
+
+
+
 
 Exponential Distribution - measures time between events
+
