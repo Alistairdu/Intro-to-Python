@@ -493,6 +493,7 @@ In-Terminal Txt Editors - VIM: "vimtutor"
         u to un-do last command 
             U to un-do all edits on a line
         CRTL + r to replace what was undone
+        
 
 
 
