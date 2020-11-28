@@ -477,8 +477,26 @@ GIT Hub Commands: the preferred Version Control System (VCS)
             these dunder methods must return None, nothing else
         __repr__(self) enables you to return an f-string
 
-In-Terminal Txt Editors:
-    VIM: 
+In-Terminal Txt Editors - VIM: "vimtutor"
+    i or I(beg of line) or a or A(end of line) to insert txt:
+
+
+    ESC to return to command mode:
+        :wq to save & exit
+        q! to exit w/o saving
+        x letter u want deleted
+        d = delete cursor to motion:
+            w - word = up to beginning of next word - dw
+            e - word = to end of word de
+            $ or d - rest of line d$ or dd
+        Number before action repeates action # of times
+        u to un-do last command 
+            U to un-do all edits on a line
+        CRTL + r to replace what was undone
+
+
+
+
     
             
        
