@@ -26,17 +26,22 @@ def poisson_cdf(lamb,k):
 def poisson_mv(lam):
     return lam, lam
 
-lamb = 5
+def exp(lamb, k):
+    return 1 - e** -(lamb * k)
+
+lamb = 1/2.72
 n = 10
-k = 5
+k = 4
 p = 0.5
+
+print(1-exp(lamb,k))
 
 # First, import the necessary function from the scipy.stats package
 from scipy.stats import norm
 
 # Call the norm function to make the calculation
-print(norm.cdf(53, loc=46, scale=1.75))
-print(norm.cdf(3.54285714286))
+# print(norm.cdf(53, loc=46, scale=1.75))
+# print(norm.cdf(3.54285714286))
 
 
 # print(binomial(n,k,p))
