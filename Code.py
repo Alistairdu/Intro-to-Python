@@ -1,61 +1,30 @@
-# Invent problems for all kinds of stats we have available and solve them
-from math import e, factorial
-from scipy.stats import poisson
+from numpy import var, mean, std
 
-def choose(n,k):
-    return factorial(n)/(factorial(n-k) * factorial(k))
+def mean_(lst):
+    return sum(lst) / len(lst)
 
-def binomial(n,k,p):
-    return choose(n,k) * p**k * (1-p)**(n-k)
+def var_(lst,ddof):
+    diffs = []
+    for num in lst:
+        diffs.append(num - mean(lst))
+    squares = []
+    for num in diffs:
+        squares.append(num**2)
+    return sum(squares)/(len(squares)-ddof)
 
-def geo(k,p): # first success is on kth trial
-    return (1-p)**(k-1) * p
+def std_(lst,ddof):
+    return var_(lst,ddof)**(1/2)
 
-def geo_cdf(k,p):
-    return sum([geo(i,p) for i in range(1,k+1)])
+#calls - 
 
-def geo_cdff(k,p):
-    return 1-(1-p)**k
+lst = [27,41,23,56,76,54,53,49,50,92,47,23,56,65,71,73,76,77,]
+ddof = 1
 
-def poisson(lamb,k):
-    return lamb**k * e**-lamb / factorial(k)
-
-def poisson_cdf(lamb,k):
-    return sum([poisson(lamb,i) for i in range(k+1)])
-
-def poisson_mv(lam):
-    return lam, lam
-
-def exp(lamb, k):
-    return 1 - e** -(lamb * k)
-
-lamb = 1/2.72
-n = 10
-k = 4
-p = 0.5
-
-print(1-exp(lamb,k))
-
-# First, import the necessary function from the scipy.stats package
-from scipy.stats import norm
-
-# Call the norm function to make the calculation
-# print(norm.cdf(53, loc=46, scale=1.75))
-# print(norm.cdf(3.54285714286))
+print(mean_(lst)) # will give the mean of the list
+print(mean(lst)) # will give the mean of the list
+print(var_(lst,ddof)) # will give the variance of the list
+print(var(lst,ddof=1)) # will give the variance of the list
+print(std_(lst,ddof)) # will give the square root of the list
+print(std(lst,ddof=1)) # will give the square root of the list
 
 
-# print(binomial(n,k,p))
-# print(poisson(lamb,k))
-
-
-# def geo_mv(p):
-#     return 1/p, (1-p)/p**2
-'''
-you are riding you bike downtown. In any 10 blocks, 
-you realize that you have on average 2 blocks w police cars.
-What is the probability that you see 7 blocks w police cars in the next 10 blocks?
-
-
-
-
-'''

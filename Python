@@ -479,8 +479,6 @@ GIT Hub Commands: the preferred Version Control System (VCS)
 
 In-Terminal Txt Editors - VIM: "vimtutor"
     i or I(beg of line) or a or A(end of line) to insert txt:
-
-
     ESC to return to command mode:
         :wq to save & exit
         q! to exit w/o saving
@@ -493,7 +491,10 @@ In-Terminal Txt Editors - VIM: "vimtutor"
         u to un-do last command 
             U to un-do all edits on a line
         CRTL + r to replace what was undone
-        
+In-Terminal Txt Editors - Nano - 
+    use CTRL to access ctrls in the bottom
+    
+
 
 
 
