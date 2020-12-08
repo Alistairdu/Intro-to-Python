@@ -297,6 +297,7 @@ Geometric Distribtuion:
             since we want prob from k == 1 = complement of this,
                 prob success is on or before k = 1-(1-p)**k
 
+
 Poisson Distribution:
     models prob a given # of events happen in a given time period or space
         events occur at previously measured constant rate
@@ -354,6 +355,8 @@ Poisson Distribution:
             = (val, loc=mu=0, scale=sigma=1) # do not use mu & sigma in call
         print(norm.ppf(0.90, loc=1.25, scale=.46)) #90th percentile
             = (percentile of RV, loc=mu=0, scale=sigma=1) 
+
+
 
 Exponential Distribution - X ~ Exp(lmbda) 
     - measures time between events of a poisson process

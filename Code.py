@@ -28,3 +28,38 @@ print(std_(lst,ddof)) # will give the square root of the list
 print(std(lst,ddof=1)) # will give the square root of the list
 
 
+
+def factorial(n):
+    prod = 1
+    for i in range(2,n+1):
+        prod *= i
+    return prod
+
+def choose(n,k):
+    return int(factorial(n) / (factorial(k) * factorial(n-k)))
+
+#call ->
+n = 18
+k = 5
+
+print(factorial(n)) # 6 -> 720
+print(choose(n,k)) # 6,1 -> 120
+
+from collections import defaultdict
+import random
+
+count_dict = defaultdict(int)
+for i in range(10):
+  roll = random.randint(1, 6)
+  count_dict[roll] += 1
+print(count_dict)
+
+from collections import defaultdict
+some_dict = defaultdict(str)
+print(some_dict['some_key'])
+
+while True: # note, infinite loop
+    input = input('Do you want to continue looking at this message? Spell the word "commitment" correctly in order to exit, otherwise we\'re doing this forever... ')
+
+    if input == 'commitment':
+        break

@@ -117,12 +117,7 @@ Functions:
         as they like
         these args, after all necessary args in the fn, can be used with 
         'args' inside the fn args are packed inside a tuple
-    **kwargs (key word arguments) - same as args, but is a 
-        dictionary that is passed in
-
-
-
-
+    **kwargs (key word arguments) - same as args, but a dictionary paramater
 Variables: convention says use well-defined and succinct snake_case names 
     can technically be any contiguous chars not beginning w num
     id(x) -> Location of x
@@ -170,24 +165,13 @@ Command Line Interface = CLI = the terminal
 CMD SHIFT . to show hidden files in Finder
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-> For AI in Asset Management - need to do Pandas, bring in Excel easily, 
+and how to build basic web applications that you team can easily access
+FTP Servers. 
+Mainly focus on your biggest pain points. Shamelessly use third-party tools. 
+Do not build everything yourself. Be prepared to spend money to get edge.
+Tensorflow - to build tools
+Amazon sagemaker
 
 
 
@@ -254,7 +238,6 @@ Comprehensions: nums = [1,8,4,2];
 
 
 
-
 Loops: 
     Rule of thumb for choosing 'for loops' vs 'while loops'
         use for loops when you know how many times you will run the loop
@@ -293,6 +276,28 @@ Loops:
     Open-ended problem (here), is any problem where you don't know how many
         iterations it will take to achieve a result.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     Menu in Command Line
         def menu_():
         menu = """
@@ -304,17 +309,12 @@ Loops:
             choice = int(input(menu))
             menu_item = ['Schnitzel', 'Beef Bourguignon', 'Duck au Poivre']
             return menu_item[choice - 1]
-
         order = []
         cont = 'y'
         while cont == 'y':
             order.append(menu_())
             cont = input("anything else?")
         print(order) -> returns lst of order items
-
-
-
-
     Strings: are immutable, so new string is returned from these methods; str
     .upper(), .lower -> all upper-case, lower-case
     .strip -> remove whitespace from start & end of str
@@ -410,6 +410,14 @@ Set: mutable collection
     .issubset(setb) -> Boolean
     .issuperset(setb) -> Boolean
 
+
+
+
+
+
+
+
+
 Math Module: from math import e, pi,  sqrt, factorial, pow(x,y) # x^y
 
 Random Module: from random import 
@@ -469,6 +477,7 @@ GIT Hub Commands: the preferred Version Control System (VCS)
             git push 
         Remote Repository 
 
+
     Classes - class Binomial: style says 
         python sees files as classes
         dunder methods are used inside a class, but are never called
@@ -493,19 +502,3 @@ In-Terminal Txt Editors - VIM: "vimtutor"
         CRTL + r to replace what was undone
 In-Terminal Txt Editors - Nano - 
     use CTRL to access ctrls in the bottom
-    
-
-
-
-
-
-    
-            
-       
-
-
-
-
-    
-
-
