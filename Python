@@ -86,8 +86,8 @@ Functions:
     print(f'this is an f-string with {variable1}')
         f'{value:{width=spacees added}.{precision=# of #s shown}}'
         f'{value:.{3f =3 decimal places shown}}'
-    print(r'raw string literal that passes all chars thorught without \
-        escapes: r"this \t\n" -> #this \t\n ')
+    print(r'raw string literal - prints all chars - even escapes \
+        escapes: r"this \t\n" -> #this \t\n '), where f"" -> "this"
     range(start, stop, increment), 
     range(5) -> [0,1,2,3,4]
     range(2,5) -> [2,3,4]
@@ -364,6 +364,8 @@ Python files called Python modules. Each creates its own namespace
     type python to bring up Python Interactive Shell 
     1st searches built-in modules for filename, 2nd in the local directory 
 
+    so the fully qualified of fn foo() in blinky.py is blinky.foo 
+
     'import sys' imports sys module and makes all sys fns available through
         sys.fn(): -> is discrete from 
         sys2.fn(): -> as each module, sys & sys2 have their own namespace
@@ -465,6 +467,7 @@ Comprehension -> more restricted for loops for appending or += to new list:
 GIT Hub Commands: the preferred Version Control System (VCS)
     git config --global user.name "Alistair duPont"
     git config --global user.email alistair.dupont@gmail.com
+    git config -l to see credentials currently signed in
 
 
     GIT Stack: 
@@ -502,3 +505,9 @@ In-Terminal Txt Editors - VIM: "vimtutor"
         CRTL + r to replace what was undone
 In-Terminal Txt Editors - Nano - 
     use CTRL to access ctrls in the bottom
+
+if a module/file is run directly(not through another file):
+    special variable __name__ is set == __main__
+    this is then used to call a fn main() to run the file
+Overloaded Operators - like +, *, as they mean different things
+    for different classes - int, str, etc.

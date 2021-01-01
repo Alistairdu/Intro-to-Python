@@ -39,40 +39,7 @@ print_words() and print_top().
 
 import sys
 
-def word_count_dict(filename):
-  # Returns a wordcount dict for filename
-  wordcount = {}
-  input_file = open(filename, "r")
-  for line in input_file:
-    words = line.split()
-    for word in words:
-      word = word.lower()
-      if not word in wordcount:
-        wordcount[word] = 1
-      else:
-         wordcount[word] += 1
-  return wordcount
-
-"""
-1. For the - -count flag, implement a print_words(filename) function that counts
-how often each word appears in the text and prints:
-word1 count1
-word2 count2"""
-def print_words(filename):
-  word_count = word_count_dict(filename)
-  words = sorted(word_count.keys())
-  for word in words:
-    print(word, word_count[word])
-  return
-  
-def get_count(word_count_tuple):
-  return word_count_tuple[1]
-
-def print_top(filename):
-  word_count = word_count_dict[filename]
-  items = sorted(word_count.items(),key=get_count)
-  return items
-
+# +++your code here+++
 # Define print_words(filename) and print_top(filename) functions.
 # You could write a helper utility function that reads a file
 # and builds and returns a word/count dict for it.

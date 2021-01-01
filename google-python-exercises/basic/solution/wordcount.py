@@ -70,7 +70,7 @@ def print_words(filename):
   word_count = word_count_dict(filename)
   words = sorted(word_count.keys())
   for word in words:
-    print(word, word_count[word])
+    print word, word_count[word]
 
 
 def get_count(word_count_tuple):

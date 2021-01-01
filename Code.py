@@ -1,4 +1,4 @@
-from numpy import var, mean, std
+'''from numpy import var, mean, std
 
 def mean_(lst):
     return sum(lst) / len(lst)
@@ -62,4 +62,11 @@ while True: # note, infinite loop
     input = input('Do you want to continue looking at this message? Spell the word "commitment" correctly in order to exit, otherwise we\'re doing this forever... ')
 
     if input == 'commitment':
-        break
+        break'''
+daily_temps = [61.2, 59.0, 59.4, 58.9, 60.1, 55.3, 55.6]
+
+from numpy import mean
+
+m = sum(daily_temps)/len(daily_temps)
+
+print(mean(daily_temps), m)
