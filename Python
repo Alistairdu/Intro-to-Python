@@ -471,9 +471,10 @@ GIT Hub Commands: the preferred Version Control System (VCS)
 
 
     GIT Stack: 
-        Untracked Unstaged -> git add -A: 
+        unTracked unStaged -> git add -A: 
             git diff -> shows last diff not yet Staged
             git status -> directory status / files not staged/committed
+                file in Red = unStaged, in Green = Staged
         Staged -> git commit -am "what's updated": #-add, message
         Local Repository -> git push: 
             git log -p -> list of former commits w messages and times
