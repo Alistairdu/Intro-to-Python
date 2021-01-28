@@ -213,7 +213,7 @@ list methods: list; a = list.append(ele) = NO NO. appends & returns None
         .remove(ele) -> removes first instance of ele
         .pop(idx) -> removes index # from list/ last entry if idx entry empty
             Can set this remved value equal to a variable
-        .sort() ->sorts like fuction above rearranges in place
+        .sort() -> sorts like fuction above, rearranges in place
         del list[1:2] -> deletes elements at index 1-2
             also to delete a variable
         .index(ele) -> returns index # of ele; 
